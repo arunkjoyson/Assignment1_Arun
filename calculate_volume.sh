@@ -9,4 +9,4 @@ l=$3
 
 RESULT=$((h * w * l))
 
-echo "The volume of the rectangular prism is: $RESULT"
+echo "$RESULT"

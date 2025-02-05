@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# incorrect number of inputs given test case
+# Incorrect number of inputs given test case
 
-RESULT=$(./calculate_volume.sh 5 4)
+./calculate_volume.sh 5 4
+EXIT_STATUS=$?
 
-if [[ $RESULT -eq "Invalid number of input values" ]];
-then
-                echo "Success"
-        else
-                        echo "Failed"
+if [[ $EXIT_STATUS -ne 0 ]]; then
+  echo "Success"
+else
+  echo "Failed"
 fi
